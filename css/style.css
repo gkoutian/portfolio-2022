@@ -264,6 +264,9 @@ main a:hover {
   #experience .experience-body {
     margin-top: 20px;
   }
+  #experience .experience-body.no-margin-top {
+    margin-top: 0px;
+  }
 
 
   #experience img {
@@ -275,6 +278,8 @@ main a:hover {
   #experience .work-logo {
     text-align: right;
   }
+
+
 
   #experience .work-list {
       margin-top: 15px;
@@ -292,6 +297,11 @@ main a:hover {
     background-position: left top;
     background-size: 3px 20px;
     background-repeat: repeat-y;
+  }
+
+  #experience .work-list.no-margin-top {
+    margin-top: 0px;
+    padding-top: 10px;
   }
 
   #experience .work-list h2 {
@@ -317,6 +327,10 @@ main a:hover {
     left: -8px;
     top: 0px;
     z-index: 40000;
+  }
+
+  #experience .no-margin-top .button {
+    top: 15px;
   }
 
   #experience.radial-gradient {
@@ -522,4 +536,18 @@ background: linear-gradient(90deg, rgba(255,76,119,1) 0%, rgba(255,76,119,1) 25%
         min-height:40px;
         max-width: 100%;
       }
+
+  #experience .experience-body.no-margin-top .work-logo {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(53%, #a1a1a1),
+      color-stop(0%, rgba(255, 255, 255, 0))
+    );
+    background-image: linear-gradient(#a1a1a1 53%, rgba(255, 255, 255, 0) 0%);
+    background-position: left top;
+    background-size: 3px 20px;
+    background-repeat: repeat-y;
+  }
 }
